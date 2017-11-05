@@ -8,11 +8,11 @@
 <div [ngClass]="{'menu-hidden' : showSearch == false, 'menu' : showSearch == true}" id="menu">
     <div class="menu-content">
         <div class="menu-header">
-            <div class="close" (click)="DisplaySearch(false)" >X</div>
+            <div class="close" (click)="DisplaySearch(false)">X</div>
             <h2>Buscar una Propiedad</h2>
         </div>
         <div class="menu-body">
-            <form>
+            <div class="form">
                 <div class="form-control">
                     <label for="">Estado</label>
                     <select name="Estados" id="">
@@ -46,8 +46,8 @@
                 </div>
 
                 <button>Buscar</button>
-                <button>Cancelar</button>
-            </form>
+                <button (click)="DisplaySearch(false)">Cancelar</button>
+            </div>
         </div>
     </div>
 </div>
