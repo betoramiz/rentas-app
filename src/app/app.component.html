@@ -1,0 +1,55 @@
+<div class="header">
+    <header class="head">Rentappme.com</header>
+    <nav class="nav">
+        <button (click)="DisplaySearch(true)">Menú</button>
+    </nav>
+</div>
+
+<div [ngClass]="{'menu-hidden' : showSearch == false, 'menu' : showSearch == true}" id="menu">
+    <div class="menu-content">
+        <div class="menu-header">
+            <div class="close" (click)="DisplaySearch(false)" >X</div>
+            <h2>Buscar una Propiedad</h2>
+        </div>
+        <div class="menu-body">
+            <form>
+                <div class="form-control">
+                    <label for="">Estado</label>
+                    <select name="Estados" id="">
+                        <option value="1">Aguascalientes</option>
+                        <option value="2">Baja California</option>
+                        <option value="3">Baja California Sur</option>
+                    </select>
+                </div>
+
+                <div class="form-control">
+                    <label for="">Inmueble</label>
+                    <select name="Estados" id="">
+                        <option value="1">Casa</option>
+                        <option value="2">Departamento</option>
+                        <option value="3">Oficina</option>
+                    </select>
+                </div>
+
+                <div class="form-control">
+                    <input type="checkbox" name="operacion" value="Renta">Renta
+                    <input type="checkbox" name="operacion" value="Venta">Venta
+                </div>
+
+                <div class="form-control">
+                    <label for="">Cuartos</label>
+                    <select name="Estados" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3+</option>
+                    </select>
+                </div>
+
+                <button>Buscar</button>
+                <button>Cancelar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<app-map></app-map>

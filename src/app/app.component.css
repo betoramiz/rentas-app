@@ -1,0 +1,91 @@
+
+.header{
+    background-color: orangered;
+    min-height: 64px;
+    display: flex;
+    box-shadow: 0px 5px 5px #888888;
+    position: absolute;
+    z-index: 90;
+    width: 100%;
+}
+
+.header header, nav{
+    display: inline;
+}
+
+.header header{
+    /* position: relative; */
+    top: 20px;
+    margin-left: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.header nav{
+    margin-left: 30px;
+}
+
+.header button{
+    margin: 10px;
+    padding: 10px 45px;
+    font-size: 15px;
+    border: none;
+}
+
+.header button:hover{
+    cursor: pointer;
+}
+
+.menu{
+    background-color: black;
+    visibility: visible;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.97;
+    z-index: 99;
+    left: 0px;
+    top: 0px;
+}
+
+.menu-hidden{
+    background-color: black;
+    visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.97;
+    z-index: 99;
+    left: 0px;
+    top: 0px;
+}
+
+.menu-content{
+    margin: 12px 12px 12px 30px;
+}
+
+.menu-header{
+    display: inline-block;
+}
+
+.menu-header h2{
+    color: white;
+}
+
+.menu-body{
+    color: white;;
+}
+
+.close{
+    font-size: 45px;
+    color: white;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+}
+
+.close:hover{
+    cursor: pointer;
+}
